@@ -1,0 +1,536 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body, html{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header{
+	padding: 30px;
+}
+
+.logo img{
+	float: left;
+	width: 236px;
+}
+
+nav.menu-mobile{
+	float: right;
+	display: none;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/menu.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	left: 0;
+	top: 55px;
+}
+
+nav.menu-mobile ul li{
+	padding: 8px 0;
+	border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+header nav.menu-desktop{
+	float: right;
+}
+
+header nav.menu-desktop ul{
+	list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+	float: left;
+	padding: 10px 20px;
+	font-size: 13px;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #b4b4b4;
+}
+
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+	background-color: grey;
+	width: 100%;
+	padding-top: 100%;
+	border: 5px solid white;
+	background-image: url(../images/sorriso2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section.servicos > .container{
+	max-width: 800px;
+	display: flex;
+	position: relative;
+	top: -28px;
+	align-items: center;
+	color: white;
+}
+
+section.servicos > .container .box-servico h2{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+section.servicos > .container .box-servico p{
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+section.servicos > .container .box-servico:nth-of-type(1){
+	width: 30%;
+	background-color: #576975;
+	padding: 30px 2%;
+	text-align: center;
+	background-image: url(../images/icone_dente.png);
+	background-size: 18px 18px;
+	background-position: center calc(100% - 5px);
+	background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servico:nth-of-type(2){
+	width: 40%;
+	background-color: #688293;
+	padding: 50px 2%;
+	text-align: center;
+}
+
+section.servicos > .container .box-servico:nth-of-type(3){
+	width: 30%;
+	background-color: #576975;
+	padding: 30px 2%;
+	text-align: center;
+	background-image: url(../images/icone_dente.png);
+	background-size: 18px 18px;
+	background-position: center calc(100% - 5px);
+	background-repeat: no-repeat;
+}
+
+section.perfil-container{
+	padding: 40px 0;
+}
+
+section.perfil-container .container{
+	max-width: 800px;
+}
+
+section.perfil-container .perfil-wraper{
+	padding-top: 60%;
+	position: relative;
+}
+
+section.perfil-container .perfil-wraper2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+section.perfil-container .img-perfil{
+	width: 40%;
+	height: 100%;
+	background-image: url(../images/img_perfil.jpg);
+	background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+	width: 60%;
+	padding: 0 30px;
+}
+
+section.perfil-container .texto-perfil h2{
+	color: #698293;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+section.perfil-container .texto-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+section.videos{
+	padding: 50px 0;
+}
+
+section.videos .box-video{
+	width: 33.3%;
+	float: left;
+	padding-top: 19.98%;
+	position: relative;
+	border: 5px solid white;
+}
+
+section.videos iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section.tratamentos{
+	padding: 70px 0;
+}
+
+section.tratamentos .tratamentos-container{
+	float: left;
+	width: 33.3%;
+}
+
+section.tratamentos .tratamento-single{
+	padding: 30px;
+}
+
+section.tratamentos .titulo{
+	text-align: center;
+	font-size: 18px;
+	padding: 40px 0;
+}
+
+.tratamentos h2{
+	font-weight: normal;
+	font-size: 18px;
+	color: #737373;
+}
+
+section.tratamentos .titulo h2{
+	color: #698293;
+}
+
+.tratamentos p{
+	padding: 10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
+}
+
+.depoimentos{
+	text-align: center;
+	padding: 50px 0;
+}
+
+section.depoimentos h2{
+	font-weight: normal;
+	font-size: 18px;
+	color: #698293;
+	padding: 40px 0;
+}
+
+section.depoimentos .depoimento-single p{
+	font-size: 17px;
+	margin: 20px 0;
+	color: #b4b4b4;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.nome-depoimento span{
+	font-size: 14px;
+	color: #b4b4b4;
+	position: relative;
+	top: -22px;
+	right: -5px;
+}
+
+section.depoimentos .nome-depoimento .img-depoimento{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: grey;
+}
+
+section.depoimentos .slider1,.slider2{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #b4b4b4;
+	margin: 40px 3px;
+	cursor: pointer;
+}
+
+.slider2{
+	background-color: #688293;
+}
+
+section.instagram{
+	padding: 20px 0;
+	text-align: center;
+	background-color: #98a5ae;
+}
+
+.instagram-single img{
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.instagram-single p{
+	font-size: 14px;
+	color: white;
+	padding: 5px;
+}
+
+.instagram-single span{
+	font-size: 13px;
+	color: white;
+	padding: 5px;
+}
+
+.fotos-single{
+	width: calc(100% / 9);
+	float: left;
+}
+
+.foto-wraper .img-foto-wraper{
+	width: 100%;
+	background-color: grey;
+	padding-top: 100%;
+	border: 5px solid white;
+	display: inline-block;
+	background-size: cover;
+	/*background-image: url(../images/sorriso1.jpg);*/
+}
+
+section.facebook{
+	padding: 20px 0;
+	text-align: center;
+	background-color: #576975;
+}
+
+.facebook-single img{
+	padding-top: 20px ;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.facebook-single p{
+	font-size: 14px;
+	color: white;
+	padding: 5px;
+}
+
+.facebook-single span{
+	font-size: 13px;
+	color: white;
+	padding: 5px;
+}
+
+section.contato{
+	padding: 60px 2%;
+}
+
+section.contato h2{
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px;
+	color: #698293;
+	padding: 20px 0;
+}
+
+section.contato form{
+	width: 100%;
+	max-width: 500px;
+	margin: 30px auto;
+}
+
+section.contato span{
+	font-size: 15px;
+	color: #b4b4b4;
+	margin-bottom: 8px;
+}
+
+.form-wraper{
+	padding: 0 10px;
+	margin-top: 20px;
+	float: left;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #dadada;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	height: 100px;
+	padding-left: 9px;
+	margin-bottom: 10px;
+	border: 1px solid #dadada;
+	resize: none;
+}
+
+.enviar{
+	text-align: center;
+}
+
+.enviar input[type=submit]{
+	width: 100px;
+	height: 40px;
+	background-color: #688293;
+	border: none;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+.funcionamento{
+	width: 100%;
+	background-color: #688293;
+	padding: 40px 2%;
+}
+
+.container{
+	text-align: center;
+}
+
+.funcionamento-wraper{
+	text-align: left;
+	display: inline-block;
+	margin: 30px auto;
+	padding: 30px 60px;
+}
+
+.funcionamento-wraper h2{
+	font-size: 17px;
+	color: white;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.funcionamento-wraper span{
+	font-size: 14px;
+	margin-top: 10px;
+	color: white;
+}
+
+footer{
+	background-color: #576975;
+	text-align: center;
+}
+
+footer h2{
+	color: white;
+	padding: 20px;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 747px){
+
+	.logo img{
+		width: 200px;
+	}
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	section.servicos > .container{
+		flex-direction: column;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(1){
+		width: 90%;
+		max-width: 350px;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(2){
+		width: 98%;
+		max-width: 380px;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(3){
+		width: 90%;
+		max-width: 350px;
+	}
+
+	section.perfil-container .perfil-wraper{
+		padding-top: 0;
+	}
+
+	section.perfil-container .perfil-wraper2{
+		display: inline-block;
+		text-align: center;
+		height: auto;
+		position: static;
+	}
+
+	section.perfil-container .img-perfil{
+		width: 50%;
+		height: auto;
+		padding-top: 70%;
+		display: inline-block;
+	}
+
+	section.perfil-container .texto-perfil{
+		display: inline-block;
+		width: 100%;
+		text-align: justify;
+		padding: 10px 30px;
+	}
+
+	section.videos{
+		text-align: center;
+	}
+
+	section.videos .box-video{
+		width: 80%;
+		float: none;
+		display: inline-block;
+		padding-top: 48%;
+		border: 5px solid white;
+	}
+
+}
