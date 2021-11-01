@@ -1,0 +1,552 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+
+.container{
+	margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	padding: 40px 2%;
+	background-image: url(../imagens/capa.png);
+	background-size: cover;
+	background-position: center;
+}
+
+header nav{
+	float: right;
+}
+
+nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url(../imagens/menu.png);
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu ul{
+	display: none;
+	width: 100%;
+	position: absolute;
+	color: white;
+	list-style-type: none;
+	left: 0;
+	top: 80px;
+	background-color: black;
+	text-align: center;
+}
+
+nav.mobile-menu:hover ul{
+	display: block;
+	opacity: 0.7;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgba(220, 220, 220, 0.8);
+}
+
+nav.mobile-menu ul li{
+	border-bottom: 1px solid white;
+	padding: 8px 0;
+}
+
+header .logo{
+	float: left;
+	width: 160px;
+	height: 40px;
+	background-image: url(../imagens/logo.png);
+	background-size: cover;
+	background-position: center;
+	background-color: #ccc;
+}
+
+header nav.desktop-menu li{
+	display: inline-block;
+	padding: 0 20px;
+}
+
+header nav.desktop-menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.chamada1{
+	max-width: 500px;
+	float: right;
+	margin: 140px 230px;
+}
+
+.chamada1 h2{
+	font-size: 38px;
+	color: white;
+	font-weight: normal;
+}
+
+.chamada1 p{
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+section.sessao1{
+	width: 100%;
+	background-color: #472562;
+	padding: 0px 2%;
+	height: 380px;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+}
+
+.texto-sessao1{
+	float: left;
+	width: 50%;
+	color: white;
+	margin-top: 80px;
+	padding-left: 60px;
+	position: relative;
+	left: 60px;
+}
+
+.texto-sessao1 h2{
+	font-size: 26px;
+	font-weight: normal;
+}
+
+.texto-sessao1 p{
+	margin-top: 17px;
+	font-size: 13px;
+}
+
+.texto-sessao1 ul li{
+	list-style-position: inside;
+	font-size: 16px;
+	margin-top: 8px;
+}
+
+.btn1-texto{
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	color: white;
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 44px;
+}
+
+.device-sessao1{
+	float: right;
+	width: 50%;
+	height: 440px;
+	background-image: url('../imagens/device.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	margin-top: -60px;
+	right: 40px;
+}
+
+section.sessao2{
+	padding: 60px 2%;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+.sessao2 .container{
+	margin-top: 60px;
+}
+
+.sessao2 h2{
+	color: #472562;
+}
+
+.sessao2 p{
+	margin-top: 30px;
+	max-width: 900px;
+	display: inline-block;
+	font-size: 15px;
+	color: #472562;
+}
+
+.sessao2 img{
+	position: relative;
+	top: 140px;
+	width: 100%;
+	max-width: 900px;
+}
+
+.sessao3{
+	width: 100%;
+}
+
+.wraper-parte1{
+	max-width: 500px;
+	float: right;
+	padding: 0 30px;
+}
+
+.parte1{
+	float: left;
+	width: 50%;
+	padding: 160px 0 90px 0;
+	background-color: #835FA7;
+	color: white;
+}
+
+.parte1 h2{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.parte1 p{
+	font-size: 16px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+.parte2{
+	float: right;
+	width: 50%;
+	padding: 160px 0 90px 0;
+	background-color: white;
+}
+
+.sobre-autor{
+	max-width: 500px;
+	padding: 0 30px;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.wraper-titulo-autor{
+	float: left;
+}
+
+.wraper-titulo-autor p{
+	font-size: 13px;
+	font-style: italic;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+
+.titulo-autor h2{
+	float: left;
+	padding-right: 5px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 23px;
+	color: #232323;
+}
+
+.parte2 img{
+	width: 40px;
+	border-radius: 50%;
+}
+
+.titulo-autor .img-autor{
+	margin-right: 51%;
+	float: right;
+	width: 40px;
+	height: 40px;
+}
+
+.texto-autor p{
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.pointers-slide div{
+	width: 10px;
+	height: 10px;
+	float: left;
+	background-color: grey;
+	border-radius: 50%;
+	margin-right: 3px;
+}
+
+.pointers-slide{
+	padding-left: 30px;
+	padding-top: 12px;
+	cursor: pointer;
+}
+
+.pointers-slide div:hover{
+	background-color: #4a4a4a;
+}
+
+section.sessao4{
+	background-color: #472563;
+	padding: 70px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 8%;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: normal;
+}
+
+.form p{
+	font-size: 15px;
+	max-width: 400px;
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form input[type=text]{
+	width: 100%;
+	max-width: 460px;
+	margin-top: 5px;
+	height: 58px;
+	padding: 8px;
+	line-height: 50px;
+	border: 1px solid rgb(220, 220, 220);
+}
+
+.form textarea{
+	width: 100%;
+	max-width: 460px;
+	margin-top: 5px;
+	height: 150px;
+	padding: 8px;
+}
+
+.form form input[type=submit]{
+	background-color: #FF703D;
+	width: 145px;
+	height: 44px;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 25px;
+	border: 0;
+	text-align: center;
+	line-height: 44px;
+	display: block;
+}
+
+.map-wraper{
+	float: right;
+	width: 50%;
+	color: white;
+	padding-left: 8%;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+
+.map{
+	width: 400px;
+	height: 400px;
+	margin-top: 15px;
+	border: 3px solid rgb(200, 200, 200);
+	background-color: white;
+}
+
+footer{
+	background-color: #192123;
+	padding: 40px 0;
+	width: 100%;
+	color: white;
+	font-size: 14px;
+}
+
+footer p:nth-of-type(1){
+	float: left;
+	padding-left: 110px;
+}
+
+footer p:nth-of-type(2){
+	float: right;
+	padding-right: 110px;
+}
+
+@media screen and (max-width: 927px){
+
+	header{
+		width: 100%;
+		height: auto;
+		min-height: 90vh;
+		padding: 40px 2%;
+	}
+
+	header .logo{
+		margin:0 10px;
+		/*float: none;*/
+	}
+
+	nav.desktop-menu{
+		display: none;
+	}
+
+	nav.mobile-menu{
+		margin: 0;
+		display: block;
+	}
+
+
+	header nav.mobile-menu li{
+		padding: 7px 0;
+		list-style: none;
+	}
+
+	header nav.mobile-menu a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.chamada1{
+		max-width: none;
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin: 100px 0;
+	}
+
+	.chamada1 h2{
+		font-size: 30px;
+		padding: 0 10px;
+		color: white;
+		font-weight: normal;
+	}
+
+	.chamada1 p{
+		color: white;
+		font-size: 13px;
+		padding: 0 10px;
+		margin-top: 10px;
+	}
+
+	section.sessao1{
+		padding: 40px 2%;
+		height: auto;
+		text-align: center;
+	}
+
+	.texto-sessao1{
+		width: 100%;
+		float: none;
+		margin-top: 10px;
+		position: static;
+		display: inline-block;
+		padding: 0;
+	}
+
+	.texto-sessao1 ul{
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.texto-sessao1 ul li{
+		float: none;
+		text-align: left;
+	}
+
+	.btn1-texto{
+		display: inline-block;
+	}
+
+
+	.device-sessao1{
+		display: none;
+	}
+
+	footer p:nth-of-type(1){
+		float: none;
+		padding: 0;
+	}
+
+	footer p:nth-of-type(2){
+		float: none;
+		padding: 0;
+		padding-top: 10px;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width:  976px){
+
+	.sessao3 .parte1{
+		width: 100%;
+		display: block;
+	}
+
+	.sessao3 .wraper-parte1{
+		float: none;
+	}
+
+	.sessao3 .sobre-autor{
+		float: none;
+	}
+
+	.sessao3 .parte2{
+		width: 100%;
+		display: block;
+	}
+
+	.form{
+		float: none;
+		text-align: center;
+		width: 100%;
+		padding: 0 70px;
+	}
+
+	.form p{
+		display: inline-block;
+	}
+
+	.form form input[type=submit]{
+		margin-left: 30%;
+
+	}
+
+	.map-wraper{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.map-wraper div{
+		display: inline-block;
+		width: 300px;
+		max-height: 300px;
+
+	}
+}
